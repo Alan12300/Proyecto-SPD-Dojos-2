@@ -33,12 +33,12 @@ void loop()
   {
     while(true)
     {
-      luz_display_2(10,11,12,13,4,1000,500);
-      luz_display_2(10,11,13,12,3,100,50);
-      luz_display_2(10,13,12,11,2,500,50);
-      luz_display_2(12,11,13,10,1,250,100);
-      luz_display_2(10,13,12,11,2,500,50);
-      luz_display_2(10,11,13,12,3,100,50);
+      luz_display_2(10,11,12,13,3,1000,500);
+      luz_display_2(10,11,13,12,2,100,50);
+      luz_display_2(10,13,12,11,1,500,50);
+      luz_display_2(12,11,13,10,0,250,100);
+      luz_display_2(10,13,12,11,1,500,50);
+      luz_display_2(10,11,13,12,2,100,50);
     }
   }
 }
@@ -82,12 +82,15 @@ void display_5_segmentos(int opcion)
     digitalWrite(3, HIGH);
     digitalWrite(5, HIGH);
   }
-  else if(opcion == 4)//numero 4
+  else if(opcion == 0)//numero 0
   {
     digitalWrite(6, HIGH);
     digitalWrite(4, HIGH);
     digitalWrite(7, HIGH);
-    digitalWrite(5, HIGH); 
+    digitalWrite(8, HIGH);
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH);
+    
   }
   else//numero 1
   {
@@ -100,7 +103,7 @@ void display_5_segmentos(int opcion)
 
 ## Link al proyecto 
 
-[tinkercard.com](https://www.tinkercad.com/things/hHzRIlv3VYD-fantastic-borwo-albar/editel?sharecode=iahT5Mvz7g88dT_WJ415pGLPM1FxiSrnWCjovAZH_Go "Link al arduino")
+[tinkercard.com](https://www.tinkercad.com/things/hHzRIlv3VYD "Link al arduino")
 
 ### Fuentes 
 
